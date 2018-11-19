@@ -149,9 +149,7 @@ class LocSelectForm extends React.Component {
         console.log("error");
       },
       success: function(data) {
-        console.log('data: ', data)
         const a= (data.daily.data);
-        console.log('aaaa', a)
         const twod = new Array();
         var counter = 0;
 
@@ -169,12 +167,9 @@ class LocSelectForm extends React.Component {
           temp.splice(9, 0, a[key]['uvIndex']);
           temp.splice(10, 0, a[key]['windSpeed']);
 
-          console.log('dafdjaflks: ',temp.splice(10, 0, a[key]['windSpeed']));
-
           twod.splice(counter, 0, temp);
           counter += 1;
         }
-        console.log('twooood  ', twod);
         this.setState({forecastedInfo: twod});
       }.bind(this),
       type: 'GET'
@@ -190,7 +185,6 @@ class LocSelectForm extends React.Component {
         console.log("error");
       },
       success: function(data) {
-        console.log(data);
         const twod = new Array();
 
         for (var i = 0; i < 30; i++) { 
@@ -210,7 +204,6 @@ class LocSelectForm extends React.Component {
             temp.splice(8, 0, a[key]['precipProbability']);
             temp.splice(9, 0, a[key]['uvIndex']);
             temp.splice(10, 0, a[key]['windSpeed']);
-            console.log(temp);
 
             twod.splice(counter, 0, temp);
             counter += 1;
@@ -218,7 +211,6 @@ class LocSelectForm extends React.Component {
         }
 
         this.setState({observedInfo: twod});
-        console.log(this.state.observedInfo);
       }.bind(this),
       type: 'GET'
     });
