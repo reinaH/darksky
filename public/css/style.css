@@ -1,0 +1,130 @@
+body {
+	background: #131e2a;
+	font-size: 14px;
+	padding: 40px;
+}
+
+.main-header{
+    color:white;
+    text-align: center;
+    font-family: 'Courier';
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.message{
+    color:white;
+    text-align: center;
+    margin: 0% 20%;
+}
+
+.instructions{
+
+}
+
+
+
+label{
+    padding: 15px;
+}
+
+.submit{
+    margin: 15px 0px;
+    background-color: #258BFF;
+    color: black;
+    border-radius: 3px;
+    border-color: #2281EB;
+
+}
+
+.lat-label input {
+    margin: 5px;
+    color:black !important;
+}
+
+.checkbox input{
+    margin: 5px;
+    font-size: 30px;
+}
+
+.checkbox input{
+    margin: 5px;    
+}
+
+input {
+  border-radius: 3px;
+  border: 1px solid #eee;
+  padding: 0px 15px;
+
+
+}
+
+form{  
+    border-radius: 5px;
+    background-color: #708090  ;
+    overflow: hidden;
+    font-size: 20px;
+    margin: 0% 20%;
+    font-family: 'Courier';
+    font-weight: 200;
+    text-align: center;
+
+}
+
+.forecasted-div{
+    color:white;
+    text-align: center;
+}
+
+.forecasted-table{
+    background-color: #cbdaf2;
+    font-family: 'Courier';
+    color: black;
+    margin: 20px 20px;
+    border-style: solid;
+    border-radius: 3px;
+    display:inline-block;
+    max-width: 25%;
+    min-height: 250px;
+}
+
+@media only screen and (max-width: 920px) {
+    .forecasted-table {
+        max-width: 360px;
+        margin: 15px 15px;
+    }
+}
+
+.observed-div{
+    color:white;
+    text-align: center;
+}
+
+.observed-table{
+    background-color: white;
+    font-family: 'Courier';
+    color: black;
+    margin: 20px 20px;
+    border-style: solid;
+    border-radius: 3px;
+    display:inline-block;
+    max-width: 15%;
+    min-height: 300px;
+}
+
+@media only screen and (max-width: 920px) {
+    .observed-table {
+        max-width: 360px;
+        margin: 15px 15px;
+    }
+}
+
+table td{padding: 10px;}
+
+.summary{
+    text-align: center;
+}
+
+    
+
+
