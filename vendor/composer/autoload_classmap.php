@@ -6,10 +6,10 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'ExampleTest' => $baseDir . '/tests/ExampleTest.php',
     'File_Iterator' => $vendorDir . '/phpunit/php-file-iterator/src/Iterator.php',
     'File_Iterator_Facade' => $vendorDir . '/phpunit/php-file-iterator/src/Facade.php',
     'File_Iterator_Factory' => $vendorDir . '/phpunit/php-file-iterator/src/Factory.php',
+    'GeocodeTest' => $baseDir . '/tests/GeocodeTest.php',
     'IlluminateQueueClosure' => $vendorDir . '/illuminate/queue/IlluminateQueueClosure.php',
     'Illuminate\\Foundation\\Composer' => $vendorDir . '/laravel/lumen-framework/src/Foundation/Composer.php',
     'Illuminate\\Foundation\\Support\\Providers\\EventServiceProvider' => $vendorDir . '/laravel/lumen-framework/src/Foundation/Support/Providers/EventServiceProvider.php',

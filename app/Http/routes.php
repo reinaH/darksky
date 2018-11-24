@@ -159,3 +159,45 @@ $app->get('api/timemachine/{lat}/{long}/{time}', function ($lat, $long, $time) {
         return ($bod);
 
 });
+
+
+
+// scratch below. 
+
+
+
+
+
+// http://www.mapquestapi.com/geocoding/v1/address?key=4nccYHBvah6USjDfNXyhKA0rMzh5qr00&location=Washington,DC
+// https://api.darksky.net/forecast/52b1c376f969f7cf82d77c07c6fb7a27/42.3601,-71.0589,1526843458?exclude=hourly,minutely,currently
+
+
+// // delete. 
+// $app->get('/test', function() {
+//     $client = new Client();
+//     $d = new DateTime();
+//     $d->sub(new DateInterval('P1D'));
+//     $result=array();
+
+//     // generate timestamps for past 30 days and today.
+//     $arr = array();
+//     array_push($arr, $d->format('U'));
+//     for ($x = 0; $x < 30; $x++) {
+//         $d->sub(new DateInterval('P1D'));
+//         array_push($arr, $d->format('U'));
+//     } 
+
+//     for ($x = 0; $x < 30; $x++) {
+//         $request = new Request(
+//             "GET",
+//             "https://api.darksky.net/forecast/52b1c376f969f7cf82d77c07c6fb7a27/42.3601,-71.0589," .(string)$arr[$x]. "?exclude=hourly,minutely,currently",[],"");
+    
+//         $response = $client->send($request);
+//         $temp = json_decode(($response->getBody()), TRUE);
+//         // print_r($result);
+//         array_push($result, $temp);
+    
+//     }
+//     return $result[0];
+
+// }

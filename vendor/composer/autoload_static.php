@@ -373,10 +373,10 @@ class ComposerStaticInit12ee69836b5028d4f2605fd2fed044fe
     );
 
     public static $classMap = array (
-        'ExampleTest' => __DIR__ . '/../..' . '/tests/ExampleTest.php',
         'File_Iterator' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Iterator.php',
         'File_Iterator_Facade' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Facade.php',
         'File_Iterator_Factory' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Factory.php',
+        'GeocodeTest' => __DIR__ . '/../..' . '/tests/GeocodeTest.php',
         'IlluminateQueueClosure' => __DIR__ . '/..' . '/illuminate/queue/IlluminateQueueClosure.php',
         'Illuminate\\Foundation\\Composer' => __DIR__ . '/..' . '/laravel/lumen-framework/src/Foundation/Composer.php',
         'Illuminate\\Foundation\\Support\\Providers\\EventServiceProvider' => __DIR__ . '/..' . '/laravel/lumen-framework/src/Foundation/Support/Providers/EventServiceProvider.php',
